@@ -1,0 +1,37 @@
+# Python Backend
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/.env
+backend/.env.local
+*.egg-info/
+.env
+.env.local
+
+# Node Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.env
+frontend/.env.local
+frontend/.env.production
+
+# General
+.DS_Store
+.vscode/
+.idea/
+*.log
+npm-debug.log*
+yarn-debug.log*
+*.tmp
+*.temp
+
+# Database & Secrets
+*.db
+*.sqlite
+secrets/
+credentials.json
+
+# OS
+Thumbs.db

@@ -1,0 +1,22 @@
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import Login from './pages/Login'
+import Register from './pages/Register'
+import Chat from './pages/Chat'
+
+function Protected({children}) {
+  const token = localStorage.getItem('token')
+  if (!token) return <Navigate to="/login" />
+  return children
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/login" element={<Login/>} />
+        <Route path="/register" element={<Register/>} />
+        <Route path="/" element={<Protected><Chat/></Protected>} />
+      </Routes>
+    </BrowserRouter>
+  )
+}
