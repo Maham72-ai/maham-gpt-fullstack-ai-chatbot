@@ -2,7 +2,7 @@
 
 React + Tailwind | FastAPI + Pydantic | MongoDB + Qdrant | RAG
 
-## Features (Mam's Requirements Covered)
+## Features 
 - Register/Login with JWT + bcrypt hashing
 - New Chat, Multiple Chats, Persistent History in MongoDB
 - Grouped Sidebar: Today, Yesterday, Previous 7 Days, Older (based on last_message_at)
